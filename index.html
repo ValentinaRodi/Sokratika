@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сократика</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Slab:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper logo">
+      <a href="#"
+        ><img class="logo__img" src="images/Logo.svg" alt="logo" />Сократика</a
+      >
+    </div>
+    <div class="wrapper main">
+      <div>
+        <img class="main__img" src="images/Illustration.png" alt="illustration" />
+      </div>
+      <form class="form">
+        <h1 class="form__title">01 Заполни форму</h1>
+        <div class="form__input">
+          <div class="theme">
+            <input
+              class="theme__input"
+              type="text"
+              id="theme"
+              name="theme"
+              placeholder="Напиши что-то конкретное"
+              autocomplete="off"
+              value=""
+            />
+            <label class="label theme__label" for="theme">Тема урока</label>
+            <button
+              class="btn__delete display_none"
+              onclick="event.preventDefault()"
+            ></button>
+          </div>
+          <div class="class">
+            <input
+              type="button"
+              class="class__select"
+              onclick="event.preventDefault()"
+              value="4"
+            />
+            <label class="label class__label" for="class">Класс</label>
+            <ul id="class" class="display_none ul-select">
+              <li value="1" class="li">1</li>
+              <li value="2" class="li">2</li>
+              <li value="3" class="li">3</li>
+              <li value="4" class="li li_selected">4</li>
+              <li value="5" class="li">5</li>
+            </ul>
+          </div>
+        </div>
+        <div class="variants-block">
+          <div class="variants">
+            <input
+              id="variant-1"
+              type="radio"
+              name="radio"
+              value="Генетика"
+              class="variants__input"
+            />
+            <label for="variant-1" value="Генетика" class="variants__item">Генетика</label>
+            <input
+              id="variant-2"
+              type="radio"
+              name="radio"
+              value="Анатомия человека"
+              class="variants__input"
+            />
+            <label for="variant-2" class="variants__item"
+              >Анатомия человека</label
+            >
+            <input
+              id="variant-3"
+              type="radio"
+              name="radio"
+              value="Вулканы"
+              class="variants__input"
+            />
+            <label for="variant-3" class="variants__item">Вулканы</label>
+            <input
+              id="variant-4"
+              type="radio"
+              name="radio"
+              value="Зимние виды спорта"
+              class="variants__input"
+            />
+            <label for="variant-4" class="variants__item"
+              >Зимние виды спорта</label
+            >
+            <input
+              id="variant-5"
+              type="radio"
+              name="radio"
+              value="Радуга"
+              class="variants__input"
+            />
+            <label for="variant-5" class="variants__item">Радуга</label>
+            <input
+              id="variant-6"
+              type="radio"
+              name="radio"
+              value="Индийская культура"
+              class="variants__input"
+            />
+            <label for="variant-6" class="variants__item"
+              >Индийская культура</label
+            >
+            <input
+              id="variant-7"
+              type="radio"
+              name="radio"
+              value="Пеший туризм"
+              class="variants__input"
+            />
+            <label for="variant-7" class="variants__item display_none"
+              >Пеший туризм</label
+            >
+            <input
+              id="variant-8"
+              type="radio"
+              name="radio"
+              value="Философия"
+              class="variants__input"
+            />
+            <label for="variant-8" class="variants__item display_none"
+              >Философия</label
+            >
+            <input
+              id="variant-9"
+              type="radio"
+              name="radio"
+              value="Вселенная"
+              class="variants__input"
+            />
+            <label for="variant-9" class="variants__item display_none"
+              >Вселенная</label
+            >
+            <input
+              id="variant-10"
+              type="radio"
+              name="radio"
+              value="Здоровые привычки"
+              class="variants__input"
+            />
+            <label for="variant-10" class="variants__item display_none"
+              >Здоровые привычки</label
+            >
+            <input
+              id="variant-11"
+              type="radio"
+              name="radio"
+              value="Бабочки"
+              class="variants__input"
+            />
+            <label for="variant-11" class="variants__item display_none"
+              >Бабочки</label
+            >
+            <input
+              id="variant-12"
+              type="radio"
+              name="radio"
+              value="Белые медведи"
+              class="variants__input"
+            />
+            <label for="variant-12" class="variants__item display_none"
+              >Белые медведи</label
+            >
+            <input
+              id="variant-13"
+              type="radio"
+              name="radio"
+              value="Экономика"
+              class="variants__input"
+            />
+            <label for="variant-13" class="variants__item display_none"
+              >Экономика</label
+            >
+            <input
+              id="variant-14"
+              type="radio"
+              name="radio"
+              value="Финансовая грамотность"
+              class="variants__input"
+            />
+            <label for="variant-14" class="variants__item display_none"
+              >Финансовая грамотность</label
+            >
+            <input
+              id="variant-15"
+              type="radio"
+              name="radio"
+              value="Фотосинтез"
+              class="variants__input"
+            />
+            <label for="variant-15" class="variants__item display_none"
+              >Фотосинтез</label
+            >
+          </div>
+          <button class="variants__btn" onclick="event.preventDefault()">
+            <img class="variants__btn_img" src="images/Add.svg" alt="add" />
+            Показать больше вариантов
+          </button>
+        </div>
+        <div class="purpose">
+          <textarea
+            id="purpose"
+            type="text"
+            value=""
+            name="purpose"
+            wrap="soft"
+            placeholder="Напиши свою учебную цель"
+            class="counter__input"
+          ></textarea>
+          <label for="purpose" class="label counter__label">Цель урока</label>
+          <div class="output-block">
+            <p class="error__text error_color"></p>
+            <output class="counter__output">0 / 200</output>
+          </div>
+        </div>
+        <div class="btn-block">
+          <button class="form__btn btn__back" onclick="event.preventDefault()">
+            Назад
+          </button>
+          <button
+            class="form__btn btn__next disabled"
+            onclick="event.preventDefault()"
+          >
+            Следующий шаг
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
